@@ -49,7 +49,7 @@ app.post('/userJoin',function(req,res){
     
     var input_name = req.body.nameajax;
     var input_phone = req.body.phoneajax;
-    var input_age = req.body.ageajax; 
+    var input_age =   req.body.ageajax; 
 
     $.ajax({
         url:'http://localhost:3000/userJoin',
