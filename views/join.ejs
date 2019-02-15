@@ -1,0 +1,33 @@
+<html>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous">
+    </script>
+
+
+<table>
+    <tr>
+        <td>이름</td>
+        <td><input id='name' type="text"></td>
+    </tr>
+
+    <tr>
+        <td>전화번호</td>
+        <td><input id='phone' type="text"></td>
+    </tr>
+
+    <tr>
+        <td>나이</td>
+        <td><input id='age' type="text"></td>
+    </tr>
+    <button type="button" id="sendBtn">보내기</button>
+</table>
+<script>
+    $("#sendBtn").click(function(){
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var age = $("#age").val();
+        console.log(name,phone,age);
+    })
+      
+</script>
+</html>
